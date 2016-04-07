@@ -22,26 +22,51 @@
     <script async
 	custom-element="amp-twitter"
 	src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js">
-</script>
+    </script>
     <style amp-custom>
+     .titlebar{
+		background: #FFA726;
+		text-align: center;
+		line-height: normal;
+		padding: 10px 16px 6px;
+		font: "Lucida Console";
+	  }
+	  h1{
+		font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	  }
+	  .bodycontent, .titlebar div{
+		max-width: 978px;
+		margin: 0 auto;
+	  }
+	  .mainphoto{
+		display: block;
+		margin-top:25px;
+		margin-left: 130px;
+		margin-right: 130px; 
+	  }
       ul {
-        list-style-type: none;      
+		list-style-type: none;      
       }
       .review {
-        height: 250px;
-        margin-top: 50px;
-        border-bottom: 1px solid #e5e5e1;
+		height: 250px;
+		margin-top: 50px;
+		border-bottom: 1px solid #e5e5e1;
       }
       .restaurant-photo {
-        float: left; 
-        width:320px; 
-        vertical-align:top
+		float: left; 
+		width:320px; 
+		vertical-align:top
       }
       .restaurant-detail {
-        float: left;
-        width:450px;
-        margin-left:10px;
-        vertical-align:top
+		float: left;
+		width:450px;
+		margin-left:10px;
+		vertical-align:top
       }
       .review {
       }
@@ -63,63 +88,68 @@
     }
     </script>
     </amp-analytics>
-    <h1>Onigiri Adventures</h1>
-	<amp-img src="./../img/onigiri-main-image.jpg" alt="onigiri" width="716" height="435"></amp-img>
-	
-	<ul>
-		<li class="review">
-			<div class="restaurant-photo">
-				<amp-img src="./../img/IMG_20160119_tomi.jpg" alt="Sushi Tomi's yaki onigiri" height="221" width="320"></amp-img>
-			</div>
-			<div class="restaurant-detail">
-				<div class="restaurant-name">Sushi Tomi</div>
-				<div>$3 per piece</div>
-				<div class="ratings">
-				<p>flavor: 1/5</p>
-				<p>presentation: 2/5 </p>
-				<p>creativity:2/5</p>
+	<div class="titlebar">
+		<h1>Onigiri Adventures</h1>
+	</div>
+	<div class="bodycontent">
+		<div class="mainphoto">
+			<amp-img src="./../img/onigiri-main-image.jpg" alt="onigiri" width="716" height="435"></amp-img>	
+		</div>
+		<ul>
+			<li class="review">
+				<div class="restaurant-photo">
+					<amp-img src="./../img/IMG_20160119_tomi.jpg" alt="Sushi Tomi's yaki onigiri" height="221" width="320"></amp-img>
 				</div>
-				<div class="comment">
-				For such a great sushi joint their onigiris were very disappointing 
-				</div>
-			</div>
-		</li>
-		
-		<li class="review">
-			<div class="restaurant-photo">
-				<amp-img src="./../img/IMG_20160123_oori.jpg" alt="Oori onigiri" height="240" width="320"></amp-img>
-			</div>
-			<div class="restaurant-detail">
-				<div class="restaurant-name">Oori Rice Triangles </div>
-				<div>$2.75 to $3.50 per piece</div>
-				<div class="ratings">
-				<p>flavor: 3/5</p>
-				<p>presentation: 3/5 </p>
-				<p>creativity:3/5</p>
-				</div>
-			</div>
-		</li>
-    
-		<li class="review">
-			<div class="restaurant-photo">
-				<amp-img src="./../img/IMG_20160123_tamon.jpg" alt="Tamon Tea Omusubi" height="221" width="320"></amp-img>
-			</div>
-			<div class="restaurant-detail">
-				<div class="restaurant-name">Tamon Tea</div>
+				<div class="restaurant-detail">
+					<div class="restaurant-name">Sushi Tomi</div>
 					<div>$3 per piece</div>
-				<div class="ratings">
-					<p>flavor: 4/5</p>
+					<div class="ratings">
+					<p>flavor: 1/5</p>
+					<p>presentation: 2/5 </p>
+					<p>creativity:2/5</p>
+					</div>
+					<div class="comment">
+					For such a great sushi joint their onigiris were very disappointing 
+					</div>
+				</div>
+			</li>
+		
+			<li class="review">
+				<div class="restaurant-photo">
+					<amp-img src="./../img/IMG_20160123_oori.jpg" alt="Oori onigiri" height="240" width="320"></amp-img>
+				</div>
+				<div class="restaurant-detail">
+					<div class="restaurant-name">Oori Rice Triangles </div>
+					<div>$2.75 to $3.50 per piece</div>
+					<div class="ratings">
+					<p>flavor: 3/5</p>
 					<p>presentation: 3/5 </p>
 					<p>creativity:3/5</p>
+					</div>
 				</div>
-			</div>
-		</li>
+			</li>
+    
+			<li class="review">
+				<div class="restaurant-photo">
+					<amp-img src="./../img/IMG_20160123_tamon.jpg" alt="Tamon Tea Omusubi" height="221" width="320"></amp-img>
+				</div>
+				<div class="restaurant-detail">
+					<div class="restaurant-name">Tamon Tea</div>
+						<div>$3 per piece</div>
+					<div class="ratings">
+						<p>flavor: 4/5</p>
+						<p>presentation: 3/5 </p>
+						<p>creativity:3/5</p>
+					</div>
+				</div>
+			</li>
    
-    <p><amp-twitter width=486 height=657
-	layout="responsive"
-	data-tweetid="693633552500457472"
-	data-cards="visible">
-    </amp-twitter></p> 
-    <p>more to come...</p>
+	    <p><amp-twitter width=486 height=657
+		layout="responsive"
+		data-tweetid="693633552500457472"
+		data-cards="visible">
+	    </amp-twitter></p> 
+	    <p>more to come...</p>
+	</div>
   </body>
 </html>
