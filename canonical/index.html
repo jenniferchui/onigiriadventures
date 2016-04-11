@@ -1,35 +1,69 @@
 <!doctype html>
-<html lang="en"><a href="../amp/carousel.html" id="" title="carousel">carousel</a>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Onigiri Adventure - Canonical</title>
     <link rel="amphtml" href="http://jenniferchui.github.io/onigiriadventures/amp/">
     <style>
-      ul {
-        list-style-type: none;
-      }
-      .review {
-        height: 250px;
-        margin-top: 50px;
-        border-bottom: 1px solid #e5e5e1;
-      }
-      .restaurant-photo {
-        float: left;
-        width:320px;
-        vertical-align:top
-      }
-      .restaurant-detail {
-        float: left;
-        width:450px;
-        margin-left:10px;
-        vertical-align:top
-      }
-      .review {
-      }
+	.titlebar{
+		background: #FFA726;
+		text-align: center;
+		line-height: normal;
+		padding: 10px 16px 6px;
+		font: "Lucida Console";
+	}
+	h1{
+		font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+		font-size: 24px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		line-height: 26.4px;
+	}
+	.bodycontent, .titlebar div{
+		max-width: 978px;
+		margin: 0 auto;
+	}
+	.mainphoto{
+		display: block;
+		margin-top:25px;
+		margin-left: 130px;
+		margin-right: 130px;
+	}
+	ul {
+		list-style-type: none;      
+	}
+	.review {
+		height: 250px;
+		margin-top: 50px;
+		border-bottom: 1px solid #e5e5e1;
+	}
+	.restaurant-photo {
+		float: left;   
+		width: 320px;
+		vertical-align:top
+	}
+	.restaurant-detail {
+		float: left;
+		width:450px;
+		margin-left:10px;
+		vertical-align:top
+	}
+	.restaurant-name {
+		font-size: 20px;
+		color: #EF6C00;
+		font-weight: bold;
+	}
     </style>
   </head>
   <body>
+  <div class="titlebar">	  
     <h1>Onigiri Adventures</h1>
+  </div>
+  <div class="bodycontent">
+	<div class="mainphoto">
+		<img src="./../img/onigiri-main-image.jpg" alt="onigiri" width="716" height="435"></img>	
+	</div>
     <ul>
       <li class="review">
         <div class="restaurant-photo">
@@ -81,6 +115,7 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </p>
     <p>more to come...</p>
+  </div>
   </body>
 </html>
 
